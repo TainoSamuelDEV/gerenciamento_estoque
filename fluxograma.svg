@@ -1,0 +1,189 @@
+<svg width="800" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .decision { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+      .process { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+      .terminal { fill: #fce4ec; stroke: #c2185b; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Título -->
+  <text x="400" y="30" class="text" font-size="16" font-weight="bold">FLUXOGRAMA - SISTEMA DE GERENCIAMENTO DE ESTOQUE</text>
+  
+  <!-- Início -->
+  <ellipse cx="400" cy="80" rx="60" ry="25" class="terminal" />
+  <text x="400" y="85" class="text">INÍCIO</text>
+  
+  <!-- Seta 1 -->
+  <line x1="400" y1="105" x2="400" y2="135" class="arrow" />
+  
+  <!-- Exibir instruções -->
+  <rect x="320" y="140" width="160" height="40" rx="5" class="process" />
+  <text x="400" y="155" class="text">Exibir instruções</text>
+  <text x="400" y="170" class="text">do sistema</text>
+  
+  <!-- Seta 2 -->
+  <line x1="400" y1="180" x2="400" y2="210" class="arrow" />
+  
+  <!-- Inicializar contador -->
+  <rect x="320" y="215" width="160" height="40" rx="5" class="process" />
+  <text x="400" y="230" class="text">Inicializar contador</text>
+  <text x="400" y="245" class="text">entrada = 1</text>
+  
+  <!-- Seta 3 -->
+  <line x1="400" y1="255" x2="400" y2="285" class="arrow" />
+  
+  <!-- Loop de entrada -->
+  <polygon points="400,290 450,315 400,340 350,315" class="decision" />
+  <text x="400" y="310" class="text">entrada ≤ 2?</text>
+  <text x="400" y="325" class="text">(Loop)</text>
+  
+  <!-- Seta SIM -->
+  <line x1="450" y1="315" x2="520" y2="315" class="arrow" />
+  <text x="485" y="310" class="text" font-size="10">SIM</text>
+  
+  <!-- Solicitar título -->
+  <rect x="540" y="295" width="140" height="40" rx="5" class="box" />
+  <text x="610" y="310" class="text">Solicitar título</text>
+  <text x="610" y="325" class="text">do livro</text>
+  
+  <!-- Seta 4 -->
+  <line x1="610" y1="335" x2="610" y2="365" class="arrow" />
+  
+  <!-- Validar título -->
+  <polygon points="610,370 660,395 610,420 560,395" class="decision" />
+  <text x="610" y="390" class="text">Título</text>
+  <text x="610" y="405" class="text">válido?</text>
+  
+  <!-- Seta NÃO (título) -->
+  <line x1="560" y1="395" x2="520" y2="395" class="arrow" />
+  <text x="540" y="390" class="text" font-size="10">NÃO</text>
+  <line x1="520" y1="395" x2="520" y2="315" class="arrow" />
+  
+  <!-- Seta SIM (título) -->
+  <line x1="610" y1="420" x2="610" y2="450" class="arrow" />
+  <text x="625" y="435" class="text" font-size="10">SIM</text>
+  
+  <!-- Solicitar gênero -->
+  <rect x="540" y="455" width="140" height="40" rx="5" class="box" />
+  <text x="610" y="470" class="text">Solicitar gênero</text>
+  <text x="610" y="485" class="text">do livro</text>
+  
+  <!-- Seta 5 -->
+  <line x1="610" y1="495" x2="610" y2="525" class="arrow" />
+  
+  <!-- Validar gênero -->
+  <polygon points="610,530 660,555 610,580 560,555" class="decision" />
+  <text x="610" y="550" class="text">Gênero</text>
+  <text x="610" y="565" class="text">válido?</text>
+  
+  <!-- Seta NÃO (gênero) -->
+  <line x1="560" y1="555" x2="520" y2="555" class="arrow" />
+  <text x="540" y="550" class="text" font-size="10">NÃO</text>
+  <line x1="520" y1="555" x2="520" y2="475" class="arrow" />
+  
+  <!-- Seta SIM (gênero) -->
+  <line x1="610" y1="580" x2="610" y2="610" class="arrow" />
+  <text x="625" y="595" class="text" font-size="10">SIM</text>
+  
+  <!-- Solicitar quantidade -->
+  <rect x="540" y="615" width="140" height="40" rx="5" class="box" />
+  <text x="610" y="630" class="text">Solicitar quantidade</text>
+  <text x="610" y="645" class="text">de exemplares</text>
+  
+  <!-- Seta 6 -->
+  <line x1="610" y1="655" x2="610" y2="685" class="arrow" />
+  
+  <!-- Validar quantidade -->
+  <polygon points="610,690 660,715 610,740 560,715" class="decision" />
+  <text x="610" y="710" class="text">Quantidade</text>
+  <text x="610" y="725" class="text">válida?</text>
+  
+  <!-- Seta NÃO (quantidade) -->
+  <line x1="560" y1="715" x2="520" y2="715" class="arrow" />
+  <text x="540" y="710" class="text" font-size="10">NÃO</text>
+  <line x1="520" y1="715" x2="520" y2="635" class="arrow" />
+  
+  <!-- Seta SIM (quantidade) -->
+  <line x1="610" y1="740" x2="610" y2="770" class="arrow" />
+  <text x="625" y="755" class="text" font-size="10">SIM</text>
+  
+  <!-- Armazenar dados -->
+  <rect x="540" y="775" width="140" height="40" rx="5" class="process" />
+  <text x="610" y="790" class="text">Armazenar dados</text>
+  <text x="610" y="805" class="text">do livro</text>
+  
+  <!-- Seta 7 -->
+  <line x1="610" y1="815" x2="610" y2="845" class="arrow" />
+  
+  <!-- Incrementar contador -->
+  <rect x="540" y="850" width="140" height="40" rx="5" class="process" />
+  <text x="610" y="865" class="text">Incrementar</text>
+  <text x="610" y="880" class="text">entrada = entrada + 1</text>
+  
+  <!-- Seta volta ao loop -->
+  <line x1="540" y1="870" x2="400" y2="870" class="arrow" />
+  <line x1="400" y1="870" x2="400" y2="340" class="arrow" />
+  
+  <!-- Seta NÃO (sair do loop) -->
+  <line x1="350" y1="315" x2="280" y2="315" class="arrow" />
+  <text x="315" y="310" class="text" font-size="10">NÃO</text>
+  
+  <!-- Calcular estoque total -->
+  <rect x="200" y="295" width="160" height="40" rx="5" class="process" />
+  <text x="280" y="310" class="text">Calcular estoque total</text>
+  <text x="280" y="325" class="text">e estatísticas</text>
+  
+  <!-- Seta 8 -->
+  <line x1="280" y1="335" x2="280" y2="365" class="arrow" />
+  
+  <!-- Calcular porcentagens -->
+  <rect x="200" y="370" width="160" height="40" rx="5" class="process" />
+  <text x="280" y="385" class="text">Calcular porcentagens</text>
+  <text x="280" y="400" class="text">por gênero</text>
+  
+  <!-- Seta 9 -->
+  <line x1="280" y1="410" x2="280" y2="440" class="arrow" />
+  
+  <!-- Verificar estoque mínimo -->
+  <rect x="200" y="445" width="160" height="40" rx="5" class="process" />
+  <text x="280" y="460" class="text">Verificar estoque</text>
+  <text x="280" y="475" class="text">mínimo por gênero</text>
+  
+  <!-- Seta 10 -->
+  <line x1="280" y1="485" x2="280" y2="515" class="arrow" />
+  
+  <!-- Exibir relatório -->
+  <rect x="200" y="520" width="160" height="40" rx="5" class="box" />
+  <text x="280" y="535" class="text">Exibir relatório</text>
+  <text x="280" y="550" class="text">completo</text>
+  
+  <!-- Seta 11 -->
+  <line x1="280" y1="560" x2="280" y2="590" class="arrow" />
+  
+  <!-- Fim -->
+  <ellipse cx="280" cy="615" rx="60" ry="25" class="terminal" />
+  <text x="280" y="620" class="text">FIM</text>
+  
+  <!-- Legenda -->
+  <text x="50" y="1050" class="text" font-size="14" font-weight="bold" text-anchor="start">LEGENDA:</text>
+  
+  <ellipse cx="80" cy="1080" rx="30" ry="15" class="terminal" />
+  <text x="130" y="1085" class="text" text-anchor="start">Terminal (Início/Fim)</text>
+  
+  <rect x="50" y="1100" width="60" height="20" rx="3" class="box" />
+  <text x="130" y="1115" class="text" text-anchor="start">Entrada/Saída de dados</text>
+  
+  <rect x="50" y="1130" width="60" height="20" rx="3" class="process" />
+  <text x="130" y="1145" class="text" text-anchor="start">Processamento</text>
+  
+  <polygon points="80,1155 105,1170 80,1185 55,1170" class="decision" />
+  <text x="130" y="1175" class="text" text-anchor="start">Decisão/Condição</text>
+  
+</svg>
