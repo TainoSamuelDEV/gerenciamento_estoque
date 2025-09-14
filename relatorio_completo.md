@@ -183,7 +183,7 @@ FIM
 
 ## 4. ALGORITMO DESENVOLVIDO
 
-O código-fonte completo da solução está disponível no arquivo `gerenciamento_estoque.py`. O algoritmo foi desenvolvido em Python seguindo as melhores práticas de programação:
+O código-fonte completo da solução está disponível no arquivo `main.py`. O algoritmo foi desenvolvido em Python seguindo as melhores práticas de programação:
 
 ### Principais Características do Código:
 
@@ -371,6 +371,7 @@ As sugestões de melhorias futuras apresentadas oferecem um roadmap claro para e
 **Data do Relatório:** $(Get-Date -Format "dd/MM/yyyy")
 
 **Arquivos do Projeto:**
-- `gerenciamento_estoque.py` - Código-fonte principal
+- `main.py` - Código-fonte principal
+- `main_explicado.py` - Código-fonte com todas as linhas comentadas
 - `fluxograma.svg` - Fluxograma visual da solução
 - `relatorio_completo.md` - Este relatório completo
