@@ -9,11 +9,6 @@ Sistema desenvolvido em Python para controle de estoque de livros, com cálculo 
 python gerenciamento_estoque.py
 ```
 
-### Execução dos Testes Automatizados
-```bash
-python teste_automatizado.py
-```
-
 ## 📋 Funcionalidades
 
 - ✅ **Registro de Entradas**: Permite registrar exatamente 2 livros com título, gênero e quantidade
@@ -47,8 +42,8 @@ O sistema foi testado com 3 cenários diferentes:
 
 ## 📁 Arquivos do Projeto
 
-- `gerenciamento_estoque.py` - Código principal do sistema
-- `teste_automatizado.py` - Testes funcionais automatizados
+- `main.py` - Código principal do sistema
+- `main_explicado.py` - Código principal todo comentado
 - `fluxograma.svg` - Fluxograma visual da solução
 - `relatorio_completo.md` - Relatório técnico completo
 - `README.md` - Este arquivo de instruções
@@ -101,7 +96,6 @@ Sistema desenvolvido seguindo boas práticas de programação:
 - Código modular e bem documentado
 - Validação robusta de entrada
 - Tratamento de erros
-- Testes automatizados
 - Interface amigável ao usuário
 
 ---
