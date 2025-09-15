@@ -1,8 +1,3 @@
-"""
-Sistema de Gerenciamento de Estoque para Livraria
-Desenvolvido para controlar entradas de livros e calcular porcentagens por gênero
-"""
-
 # Constantes - Estoque mínimo por gênero
 ESTOQUE_MINIMO_FICCAO = 10
 ESTOQUE_MINIMO_NAO_FICCAO = 8

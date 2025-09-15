@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-# Shebang: indica ao sistema operacional qual interpretador usar para executar o script
-# -*- coding: utf-8 -*-
-# Declaração de codificação: especifica que o arquivo usa codificação UTF-8 para caracteres especiais
-
-"""
-Docstring do módulo: descrição geral do programa
-Sistema de Gerenciamento de Estoque para Livraria
-Desenvolvido para controlar entradas de livros e calcular porcentagens por gênero
-"""
-
-# SEÇÃO DE CONSTANTES GLOBAIS
-# Constantes são valores que não mudam durante a execução do programa
-# Usamos convenção MAIÚSCULA para identificar constantes em Python
-
 # Define o estoque mínimo necessário para o gênero Ficção (10 exemplares)
 ESTOQUE_MINIMO_FICCAO = 10
 
@@ -38,7 +23,7 @@ ESTOQUE_MINIMO_HISTORIA = 7
 ESTOQUE_MINIMO_CIENCIA = 9
 
 # DEFINIÇÃO DA PRIMEIRA FUNÇÃO: obter_dados_livro
-# A palavra-chave 'def' inicia a definição de uma função
+# A palavra-chave 'def' inicia a definição da função
 # 'numero_entrada' é o parâmetro que a função recebe
 def obter_dados_livro(numero_entrada):
     """
